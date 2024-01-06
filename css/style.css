@@ -1,0 +1,162 @@
+/* ---------------------------------- Base ---------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --sm: 576px;
+  --md: 576px;
+  --lg: 992px;
+  --xl: 1200px;
+  --heading-primary: "Work Sans", Arial, sans-serif;
+  --heading-secondary: "Roboto", sans-serif;
+  --heading-tertiary: "Roboto", sans-serif;
+  --sub-heading: "Roboto", sans-serif;
+  --default-font-family: "Roboto", sans-serif;
+  --color-primary: #55c57a;
+  --color-primary-light: #55c57a;
+  --color-primary-dark: #55c57a;
+  --color-secondary: #de786d;
+  --color-secondary-light: #de786d;
+  --color-secondary-dark: #de786d;
+  --color-grey-1: rgb(89, 89, 89);
+  --color-grey-2: #bdbcbc;
+  --color-grey-3: #e4e4e4;
+  --color-grey-4: rgba(228, 228, 228, 0.2);
+  --default-font-size: 1.6rem;
+  font-size: 62.5%;
+}
+
+body {
+  /* font-size: ; */
+  /* font-family: ; */
+  /* font-weight: ; */
+  /* line-height: 1.8; */
+  /* color: #818181; */
+}
+
+/* ------------------------------- Typography ------------------------------- */
+
+body {
+  font: var(--default-font-family);
+  font-weight: 400;
+  font-size: var(--default-fontsize);
+  line-height: 1.7;
+  color: var(62.5%);
+}
+
+.heading-primary {
+  /* font-family: ; */
+  /* font-size: ; */
+  /* font-weight: ; */
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  display: block;
+  letter-spacing: 3.5rem;
+}
+
+.heading-secondary {
+  /* font-family: ; */
+  /* font-size: ; */
+  /* font-weight: ; */
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  display: block;
+  letter-spacing: 3.5rem;
+}
+
+.heading-tertiary {
+  /* font-family: ; */
+  /* font-size: ; */
+  /* font-weight: ; */
+  text-transform: capitalize;
+  margin-bottom: 3.5rem;
+  display: block;
+  letter-spacing: 3.5rem;
+}
+
+.sub-heading {
+  /* font-family: ; */
+  /* font-size: ; */
+  /* font-weight: ; */
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  display: block;
+  letter-spacing: 1rem;
+  position: relative;
+}
+
+.sub-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  /* background: var(); */
+}
+
+.paragraph {
+  /* font-family: ; */
+  /* font-size: ; */
+  /* font-weight: ; */
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+/* -------------------------------- Utilities ------------------------------- */
+
+/* ------------------------------- Components ------------------------------- */
+a,
+a:focus,
+a:active,
+a:hover,
+#nav-search-icon {
+  outline: none;
+}
+/* --------------------------------- Layout --------------------------------- */
+/* ----------------------------------- Nav ---------------------------------- */
+nav.navbar {
+  margin-bottom: 0;
+  /* background-color: var(); */
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+#header-logo {
+  width: 20rem;
+}
+/* -------------------------------- Nav Links ------------------------------- */
+.navbar-nav li a {
+  text-transform: uppercase;
+}
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+
+@media only screen and (min-width: var(--md)) {
+  .navbar-nav li a:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+/* ----------------------------- Container style ---------------------------- */
+.container {
+    padding: 80px 120px;
+  }
+/* -------------------------------- Home Page ------------------------------- */
+body#home-page {
+}
+/* sections should be containers */
+.container-fluid {
+  /* padding: ; */
+}

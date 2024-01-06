@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme The Band</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      /* ---------------------------------- Base ---------------------------------- */
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      :root {
+        --sm: 576px;
+        --md: 768px;
+        --lg: 992px;
+        --xl: 1200px;
+        --heading-primary: "Work Sans", Arial, sans-serif;
+        --heading-secondary: "Roboto", sans-serif;
+        --heading-tertiary: "Roboto", sans-serif;
+        --sub-heading: "Roboto", sans-serif;
+        --default-font-family: "Roboto", sans-serif;
+        --color-primary: #55c57a;
+        --color-primary-light: #55c57a;
+        --color-primary-dark: #55c57a;
+        --color-secondary: #de786d;
+        --color-secondary-light: #de786d;
+        --color-secondary-dark: #de786d;
+        --color-grey-1: rgb(89, 89, 89);
+        --color-grey-2: #bdbcbc;
+        --color-grey-3: #e4e4e4;
+        --color-grey-4: rgba(228, 228, 228, 0.2);
+        --default-font-size: 1.6rem;
+        font-size: 62.5%;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+        line-height: 1.6;
+        /* font-size: ; */
+        /* font-family: ; */
+        /* font-weight: ; */
+        /* line-height: 1.8; */
+        /* color: #818181; */
+      }
+
+      h1,
+      h2,
+      h3,
+      .sub-heading {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /* ----------------------------------- Nav ---------------------------------- */
+      nav.navbar {
+        margin-bottom: 0;
+        /* background-color: var(); */
+        z-index: 9999;
+        border: 0;
+        /*font-size: 12px !important;*/
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+        background-color: rgb(59, 59, 59);
+      }
+      .nav-wrapper--1 {
+        background-color: rgb(59, 59, 59);
+      }
+      .nav-wrapper--2 {
+        background-color: rgb(255, 249, 242);
+      }
+      #header-logo {
+        font-family: "Arvo", serif;
+        font-size: 5rem;
+      }
+      @media only screen and (min-width: 768px) {
+        .navbar-nav--cta {
+          height: 100%;
+          margin-right: 0;
+          margin-top: 1rem;
+        }
+        .navbar-nav--cta:last-child {
+          margin-right: 1rem;
+        }
+        .navbar-nav--cta-m {
+          display: none;
+        }
+        .container.heading .col-md-6 {
+          padding: 0;
+        }
+      }
+      .heading-primary {
+        font-family: "Lato";
+        /* font-size: ; */
+        /* font-weight: ; */
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        letter-spacing: 5px;
+      }
+      .sub-heading {
+        /* font-size: ; */
+        /* font-weight: ; */
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        display: block;
+        letter-spacing: 1rem;
+        font-size: 2rem;
+      }
+      .heading-secondary {
+        font-family: "Lato";
+        /* font-size: ; */
+        /* font-weight: ; */
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        letter-spacing: 5px;
+      }
+      .text-carousel-item--1 {
+        font-size: 4rem;
+        color: aliceblue;
+      }
+      .ta-c {
+        text-align: center;
+      }
+      .d-ib {
+        display: inline-block;
+      }
+      .p-r {
+        position: relative;
+        height: 100%;
+      }
+      .carousel-inner {
+        height: 90vh;
+      }
+      .carousel-indicators li,
+      .carousel-indicators .active {
+        height: 1px;
+        width: 2rem;
+      }
+      .carousel-item {
+        height: 80vh;
+        background-color: green;
+        background-image: url("./images/crosstrek5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      .carousel-item .row {
+        position: absolute;
+      }
+
+      /*----------------------------- Nav; Top Menu ----------------------------- */
+      .nav__top {
+        padding: 1rem 0;
+        color: white;
+        background-color: black;
+      }
+      .nav__top a,
+      .nav__top a:visited,
+      .nav__top a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+      /* ------------------------ Nav; Toggle ------------------------ */
+      .nav__toggle {
+        flex-grow: 1;
+      }
+      .navbar-toggle,
+      .navbar-toggle:focus,
+      .navbar-toggle:hover {
+        background-color: #bdbcbc4b !important;
+        border: none;
+        margin-right: 30px;
+      }
+      /* ------------------------ Nav; Brand and Logo ------------------------ */
+      .navbar-brand {
+        height: auto;
+      }
+      #logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #logo a,
+      #logo a:visited,
+      #logo a:hover {
+        text-decoration: none;
+      }
+      #logo a {
+        color: white;
+      }
+      .nav-brand__logo {
+        position: relative;
+      }
+      .nav-brand__logo img {
+        height: 8rem;
+      }
+      .nav-brand__logo::after {
+        content: "";
+        height: 5rem;
+        width: 1px;
+        background-color: gray;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .nav-brand__tag {
+        font-size: 1.2rem;
+      }
+      /* ---------------------------- Nav; Sub Menu ---------------------------- */
+      .sub-menu {
+        font-style: italic;
+      }
+      .sub-menu__item a,
+      .sub-menu__item a:visited,
+      .sub-menu__item a:hover {
+        color: white !important;
+      }
+      .sub-menu__item--icon {
+        color: red;
+      }
+      .sub-menu__item:not(:last-of-type)::after {
+        content: "";
+        height: 2rem;
+        width: 1px;
+        background-color: rgb(221, 221, 221);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      /* ------------------------------ Nav; Main ------------------------------ */
+
+      @media only screen and (min-width: 768px) {
+        .nav__main {
+          width: auto !important;
+        }
+        .nav__main a {
+          min-width: auto;
+          font-size: 1rem;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .nav__top a,
+        .nav__top span {
+          font-size: 1.3rem;
+          letter-spacing: 2px;
+        }
+        .navbar-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .navbar-nav a {
+          text-align: center;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        .nav__top a,
+        .nav__top span {
+          font-size: 1rem;
+          letter-spacing: 1px;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 970px) {
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        box-shadow: 4px 4px 20px rgb(0, 0, 0);
+        width: 100%;
+        padding: 5px;
+      }
+      .card__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card__image img {
+        width: 20rem;
+        height: 20rem;
+      }
+      .banner {
+        background: rgb(123, 0, 1);
+        background: linear-gradient(
+          141deg,
+          rgba(123, 0, 1, 1) 0%,
+          rgba(127, 0, 0, 1) 100%
+        );
+      }
+      .banner__image {
+        width: 100%;
+      }
+      .banner__image img {
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid nav__top">
+        <div class="row">
+          <div class="col-xs-12 ta-c">
+            <a>Sales: 222-222-222</a>
+            <span>&nbsp;|&nbsp;</span>
+            <a>Service: 222-222-222</a>
+          </div>
+        </div>
+      </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="container nav__main">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <div class="navbar-header">
+              <ul class="nav navbar-nav navbar-brand" id="logo">
+                <li class="nav-brand__logo">
+                  <a href="#"><img src="./temp2/Mazda.webp" alt="" /></a>
+                </li>
+                <li class="nav-brand__tag"><a href="">DAYTONA</a></li>
+              </ul>
+              <div class="nav__toggle">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-ex1-collapse"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="row collapse navbar-collapse navbar-ex1-collapse">
+              <div class="col-xs-12">
+                <ul class="nav navbar-nav navbar-right sub-menu">
+                  <li class="sub-menu__item">
+                    <a class="btn-xs">
+                      <span
+                        class="glyphicon glyphicon-phone-alt sub-menu__item--icon"
+                      ></span>
+                      Call Now
+                    </a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="btn-xs">
+                      <span
+                        class="glyphicon glyphicon-phone-alt sub-menu__item--icon"
+                      ></span>
+                      Call Now
+                    </a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="btn-xs">
+                      <span
+                        class="glyphicon glyphicon-phone-alt sub-menu__item--icon"
+                      ></span>
+                      Call Now
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12">
+                <ul class="nav navbar-nav navbar-right main-menu">
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      >Dropdown <b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      >Dropdown <b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <main>
+      <div class="container heading">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="heading-primary">2024 Subaru Crosstrek</h1>
+            <span class="sub-heading">Charlotte, NC </span>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+
+      <!-- <div class="container-fluid banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 banner__image">
+              <img src="./images/110061-WB-DIAM-lg.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <!-- ------------------------------ Heading 2 ------------------------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>

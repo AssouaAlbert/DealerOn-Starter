@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme The Band</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      /* ---------------------------------- Base ---------------------------------- */
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      :root {
+        --sm: 576px;
+        --md: 768px;
+        --lg: 992px;
+        --xl: 1200px;
+        --heading-primary: "Work Sans", Arial, sans-serif;
+        --heading-secondary: "Roboto", sans-serif;
+        --heading-tertiary: "Roboto", sans-serif;
+        --sub-heading: "Roboto", sans-serif;
+        --default-font-family: "Roboto", sans-serif;
+        --color-primary: #55c57a;
+        --color-primary-light: #55c57a;
+        --color-primary-dark: #55c57a;
+        --color-secondary: #de786d;
+        --color-secondary-light: #de786d;
+        --color-secondary-dark: #de786d;
+        --color-grey-1: rgb(89, 89, 89);
+        --color-grey-2: #bdbcbc;
+        --color-grey-3: #e4e4e4;
+        --color-grey-4: rgba(228, 228, 228, 0.2);
+        --default-font-size: 1.6rem;
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        line-height: 1.6;
+        /* font-size: ; */
+        /* font-family: ; */
+        /* font-weight: ; */
+        /* line-height: 1.8; */
+        /* color: #818181; */
+      }
+
+      h1,
+      h2,
+      h3,
+      .sub-heading {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /* ----------------------------------- Nav ---------------------------------- */
+      nav.navbar {
+        margin-bottom: 0;
+        /* background-color: var(); */
+        z-index: 9999;
+        border: 0;
+        /*font-size: 12px !important;*/
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+      }
+      .nav-wrapper--1 {
+        background-color: rgb(255, 238, 215);
+      }
+      .nav-wrapper--2 {
+        background-color: rgb(255, 249, 242);
+      }
+      #header-logo {
+        font-family: "Arvo", serif;
+        font-size: 5rem;
+      }
+      @media only screen and (max-width: 767px) {
+        .navbar-nav--cta {
+          display: none;
+        }
+        .navbar-nav--cta-m {
+          display: block;
+        }
+        .navbar-nav--cta-m a {
+          display: block;
+          text-align: center;
+          width: max-content;
+          margin: auto;
+        }
+        .navbar-nav a {
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .navbar-nav--cta {
+          height: 100%;
+          margin-right: 0;
+          margin-top: 1rem;
+        }
+        .navbar-nav--cta:last-child {
+          margin-right: 1rem;
+        }
+        .navbar-nav--cta-m {
+          display: none;
+        }
+        .container.heading .col-md-6 {
+          padding: 0;
+        }
+      }
+      .heading-primary {
+        font-family: "Lato";
+        /* font-size: ; */
+        /* font-weight: ; */
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        letter-spacing: 5px;
+      }
+      .sub-heading {
+        /* font-size: ; */
+        /* font-weight: ; */
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        display: block;
+        letter-spacing: 1rem;
+        font-size: 2rem;
+      }
+      .heading-secondary {
+        font-family: "Lato";
+        /* font-size: ; */
+        /* font-weight: ; */
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        letter-spacing: 5px;
+      }
+      .text-carousel-item--1 {
+        font-size: 4rem;
+        color: aliceblue;
+      }
+      .ta-c {
+        text-align: center;
+      }
+      .d-ib {
+        display: inline-block;
+      }
+      .p-r {
+        position: relative;
+        height: 100%;
+      }
+      .carousel-inner {
+        height: 90vh;
+      }
+      .carousel-indicators li,
+      .carousel-indicators .active {
+        height: 1px;
+        width: 2rem;
+      }
+      .carousel-item {
+        height: 80vh;
+        background-color: green;
+        background-image: url("./images/crosstrek5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      .carousel-item .row {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="nav-wrapper nav-wrapper--1">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="header-logo" href="#myPage">Logo</a>
+          </div>
+          <div class="nav navbar-nav navbar-right navbar-nav--cta">
+            <a type="button" class="btn btn-default"
+              >Call Now <span class="glyphicon glyphicon-phone-alt"></span
+            ></a>
+          </div>
+          <div class="nav navbar-nav navbar-right navbar-nav--cta">
+            <a type="button" class="btn btn-default"
+              >Search <span class="glyphicon glyphicon-search"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-wrapper nav-wrapper--2">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#myPage">HOME</a></li>
+              <li><a href="#band">FEATURES & SPEC</a></li>
+              <li><a href="#tour">SEARCH INVENTORIES</a></li>
+              <li><a href="#contact">OUR LOCATION</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                  >MORE <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Merchandise</a></li>
+                  <li><a href="#">Extras</a></li>
+                  <li><a href="#">Media</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav navbar-nav navbar-right navbar-nav--cta-m">
+              <a class="btn btn-default"
+                >Call Now <span class="glyphicon glyphicon-phone-alt"></span
+              ></a>
+            </div>
+            <div class="nav navbar-nav navbar-right navbar-nav--cta-m">
+              <a class="btn btn-default"
+                >Search <span class="glyphicon glyphicon-search"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container heading">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="heading-primary">2024 Subaru Crosstrek</h1>
+            <span class="sub-heading">Charlotte, NC </span>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+      <div id="carousel-id" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item carousel-item">
+            <!-- <div class="container carousel-item-container"> -->
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <h2 class="heading-secondary text-carousel-item--1">
+                  Always room for stories.
+                </h2>
+              </div>
+            </div>
+
+            <!-- </div> -->
+          </div>
+          <div class="item carousel-item">
+            <!-- <div class="container carousel-item-container"> -->
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <h2 class="heading-secondary">Always room for stories.</h2>
+              </div>
+            </div>
+
+            <!-- </div> -->
+          </div>
+          <div class="item carousel-item active">
+            <!-- <div class="container carousel-item-container"> -->
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <h2 class="heading-secondary">Always room for stories.</h2>
+              </div>
+            </div>
+
+            <!-- </div> -->
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"
+          ><span class="glyphicon glyphicon-chevron-left"></span
+        ></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"
+          ><span class="glyphicon glyphicon-chevron-right"></span
+        ></a>
+      </div>
+      <div class="container-fluid"></div>
+    </main>
+
+    <!-- ------------------------------ Heading 2 ------------------------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>

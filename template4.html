@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      .navbar-brand {
+        height: auto;
+      }
+      .navbar {
+        margin-bottom: 0;
+      }
+      .banner__image {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <style>
+    :root {
+      --color-primary: #2b90d9;
+      font-size: 62.5%;
+    }
+    h2 {
+      font-weight: bolder;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      font-size: large;
+      font-weight: bolder;
+      margin-bottom: 1rem;
+    }
+    .sub-heading {
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+      margin-top: 1.2rem;
+      display: inline-block;
+    }
+    .color-white {
+      color: white;
+    }
+    .btn {
+      font-weight: bolder;
+      border: none;
+      background-color: var(--color-primary);
+      border-radius: 0;
+      margin-top: 1rem;
+    }
+    .btn.btn-default {
+      color: white;
+    }
+    .text-upper {
+      text-transform: uppercase;
+    }
+    .text-align-cent {
+      text-align: center;
+    }
+    main section {
+      padding-top: 7rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+  <body>
+    <style>
+      .navbar {
+        border: none;
+      }
+      .nav__top {
+        background-color: rgb(0, 0, 0);
+      }
+      .nav__top--menu li {
+        position: relative;
+      }
+      .nav__top--menu li a {
+        color: azure !important;
+      }
+      .nav__top--menu li:not(:last-of-type)::before {
+        content: "";
+        width: 1px;
+        height: 10px;
+        background-color: azure;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      .nav__top--center {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid nav__top">
+          <div class="container nav__top--center">
+            <ul class="nav navbar-nav nav__top--menu">
+              <li class="">
+                <a href="#">Sales: 222-222-2222</a>
+              </li>
+              <li>
+                <a href="#">Service: 222-222-2222</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <style>
+          .nav__main {
+            background-color: rgb(255, 255, 255);
+          }
+          .nav__main--align-center {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .navbar-brand img {
+            width: 9rem;
+          }
+          .nav__main--menu {
+            flex-grow: 1;
+          }
+        </style>
+        <div class="contiainer-fluid nav__main">
+          <div class="container nav__main--align-center">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-ex1-collapse"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"
+                ><img src="./images/logo.webp" alt=""
+              /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse navbar-ex1-collapse nav__main--menu"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >New <b class="caret"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Pre-Owned</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Service and Parts</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Locations</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >Pre-Owned <b class="caret"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Pre-Owned</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Service and Parts</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Locations</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >Specials <b class="caret"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Pre-Owned</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Service and Parts</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Locations</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >Service and Parts <b class="caret"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Pre-Owned</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Service and Parts</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Locations</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >About Us <b class="caret"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Pre-Owned</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Service and Parts</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Locations</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Our Locations</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <style>
+        .banner--header {
+          background: rgb(123, 0, 1);
+          background: linear-gradient(
+            141deg,
+            rgba(123, 0, 1, 1) 0%,
+            rgba(127, 0, 0, 1) 100%
+          );
+        }
+      </style>
+      <a href="http://">
+        <div class="container-fluid banner--header">
+          <div class="container banner">
+            <img
+              class="banner__image"
+              src="./images/110061-WB-DIAM-lg.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </a>
+    </section>
+    <main>
+      <section class="container-fluid section__hero-search">
+        <style>
+          .section__hero-search {
+            background-image: url("./images/crosstrek10.jpg");
+            position: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          .hero-search {
+            text-align: center;
+          }
+          .hero-search__form {
+            margin-top: 3rem;
+          }
+        </style>
+
+        <div class="container hero-search">
+          <h2 class="color-white text-upper">
+            6,000 VEHICLES. 18 BRANDS. 1 LOCATION.
+          </h2>
+          <span class="sub-heading color-white"
+            >Floridas LARGEST Selection of New & Pre-Owned Vehicles!</span
+          >
+          <form class="hero-search__form" action="/action_page.php">
+            <div class="form-group row">
+              <div class="col-sm-2">
+                <select class="form-control" id="sel1">
+                  <option>New</option>
+                  <option>Used</option>
+                  <option>Certified</option>
+                </select>
+              </div>
+
+              <div class="col-sm-2">
+                <select class="form-control" id="sel1">
+                  <option>Any Year</option>
+                  <option>2024</option>
+                  <option>2023</option>
+                  <option>2022</option>
+                </select>
+              </div>
+
+              <div class="col-sm-3">
+                <select class="form-control" id="sel1">
+                  <option>Any Make</option>
+                  <option>Ford</option>
+                  <option>BMW</option>
+                  <option>Toyota</option>
+                </select>
+              </div>
+
+              <div class="col-sm-4">
+                <select class="form-control" id="sel1">
+                  <option>Any Model</option>
+                  <option>S2 Series</option>
+                  <option>Branco</option>
+                  <option>Ariya</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-default">Search</button>
+          </form>
+          <style>
+            .card {
+              margin: 5rem auto;
+            }
+            .card__item {
+              background-color: white;
+              padding: 2rem;
+              border-radius: 5px;
+            }
+            .card__item--icon {
+              font-size: 60px;
+              color: var(--color-primary);
+            }
+            .card__item--description {
+              text-align: center;
+            }
+          </style>
+          <div class="row card">
+            <div class="col-sm-4">
+              <div class="card__item">
+                <span
+                  class="glyphicon glyphicon-search card__item--icon"
+                ></span>
+                <h4 class="card__item--heading text-upper">SHOP BY LOCATION</h4>
+                <p class="card__item--description">
+                  With thousands of vehicles in-stock, we are sure to have just
+                  what you are looking for.
+                </p>
+                <button type="button" class="btn btn-primary btn-lg text-upper">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card__item">
+                <span class="glyphicon glyphicon-tag card__item--icon"></span>
+                <h4 class="card__item--heading text-upper">
+                  VIEW OUR SPECIALS
+                </h4>
+                <p class="card__item--description">
+                  Check out our latest special offers. These deals are available
+                  for a limited time.
+                </p>
+                <button type="button" class="btn btn-primary btn-lg text-upper">
+                  View Specials
+                </button>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card__item">
+                <span class="glyphicon glyphicon-road card__item--icon"></span>
+                <h4 class="card__item--heading text-upper">
+                  CERTIFIED COLLISION CENTER
+                </h4>
+                <p class="card__item--description">
+                  We handle everything from mild fender benders to more serious
+                  car wrecks.
+                </p>
+                <button type="button" class="btn btn-primary btn-lg text-upper">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style>
+        .section__brand {
+          margin-top: 2rem;
+        }
+        .brand__item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 1rem;
+          margin-top: 2rem;
+          box-shadow: 0 -4px 20px rgba(128, 128, 128, 0.436);
+        }
+        .brand__image {
+          height: 100px;
+        }
+        .brand__link,
+        .brand__link:hover {
+          text-align: center;
+          text-decoration: none;
+        }
+        .brand__caption {
+          font-size: smaller;
+          height: 3rem;
+        }
+      </style>
+      <section class="contianer-fluid section__brand">
+        <div class="container">
+          <h2 class="text-align-cent">Explore by Brand</h2>
+          <div class="row brand">
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img class="brand__image" src="./images/ford.webp" alt="" />
+                  <h4 class="brand__caption text-align-cent">
+                    Gary Yeamans <br />Ford
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img
+                    class="brand__image"
+                    src="./images/logo-cdjr.webp"
+                    alt=""
+                  />
+                  <h4 class="brand__caption text-align-cent">
+                    Daytona Dodge Chrysler <br />
+                    Jeep Ram Fiat
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img class="brand__image" src="./images/nissan.webp" alt="" />
+                  <h4 class="brand__caption text-align-cent">
+                    Daytona <br />
+                    Nissan
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img
+                    class="brand__image"
+                    src="./images/mercedes-benz.webp"
+                    alt=""
+                  />
+                  <h4 class="brand__caption text-align-cent">
+                    Mercedes-Benz <br />
+                    of Daytona
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img class="brand__image" src="./images/mazda.webp" alt="" />
+                  <h4 class="brand__caption text-align-cent">
+                    Daytona <br />
+                    Mazda
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img class="brand__image" src="./images/bmw.webp" alt="" />
+                  <h4 class="brand__caption text-align-cent">
+                    Fields BMW <br />
+                    of Daytona
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img
+                    class="brand__image"
+                    src="./images/infiniti.webp"
+                    alt=""
+                  />
+                  <h4 class="brand__caption text-align-cent">
+                   Daytona <br/>
+                   INFINITY
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img
+                    class="brand__image"
+                    src="./images/lincoln.webp"
+                    alt=""
+                  />
+                  <h4 class="brand__caption text-align-cent">
+                    Gary Yeomans <br/> Lincoln
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img class="brand__image" src="./images/honda.webp" alt="" />
+                  <h4 class="brand__caption text-align-cent">
+                    Gary Yeomans <br/> Honda
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img
+                    class="brand__image"
+                    src="./images/volkswagen.webp"
+                    alt=""
+                  />
+                  <h4 class="brand__caption text-align-cent">
+                    Gary Yeamans Ford
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img class="brand__image" src="./images/volvo.webp" alt="" />
+                  <h4 class="brand__caption text-align-cent">
+                    Gunther Volkswagen <br/>
+                    Daytona Beach
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="brand__item">
+                <a href="" class="brand__link">
+                  <img
+                    class="brand__image"
+                    src="./images/logo-maserati-alfaromeo.webp"
+                    alt=""
+                  />
+                  <h4 class="brand__caption text-align-cent">
+                    Gunther Volvo Care <br/>
+                    Daytona Beach 
+                  </h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <h2>Featured Offers</h2>
+            <span
+              >Check out our latest special offers. These deals are available
+              for a limited time.</span
+            >
+
+            <div class="row">
+              <div class="col-sm-12 col-md-2 col-lg-3">
+                <div>
+                  <img src="./images/CarsPod.webp" width="100%" alt="" />
+                  <h2>Auto Mall Cars</h2>
+                  <p>Sedans, Coupes, Convertibles and more</p>
+                  <h4>
+                    Special Financing and Huge Rebates available on many models!
+                  </h4>
+                  <a class="btn btn-default" href="#" role="button"
+                    >Gary Yeamans Ford</a
+                  >
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 col-lg-3">
+                <div>
+                  <img src="./images/CarsPod.webp" width="100%" alt="" />
+                  <h2>Auto Mall Cars</h2>
+                  <p>Sedans, Coupes, Convertibles and more</p>
+                  <h4>
+                    Special Financing and Huge Rebates available on many models!
+                  </h4>
+                  <a class="btn btn-default" href="#" role="button"
+                    >Gary Yeamans Ford</a
+                  >
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 col-lg-3">
+                <div>
+                  <img src="./images/CarsPod.webp" width="100%" alt="" />
+                  <h2>Auto Mall Cars</h2>
+                  <p>Sedans, Coupes, Convertibles and more</p>
+                  <h4>
+                    Special Financing and Huge Rebates available on many models!
+                  </h4>
+                  <a class="btn btn-default" href="#" role="button"
+                    >Gary Yeamans Ford</a
+                  >
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 col-lg-3">
+                <div>
+                  <img src="./images/CarsPod.webp" width="100%" alt="" />
+                  <h2>Auto Mall Cars</h2>
+                  <p>Sedans, Coupes, Convertibles and more</p>
+                  <h4>
+                    Special Financing and Huge Rebates available on many models!
+                  </h4>
+                  <a class="btn btn-default" href="#" role="button"
+                    >Gary Yeamans Ford</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <h2>
+              GET TOP DOLLAR FOR YOUR TRADE!
+              <span>
+                <a class="btn btn-default" href="#" role="button">Get Offer</a>
+              </span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <h4>Welcome to</h4>
+              <h2>DAYTONA AUTO MALL</h2>
+              <p>
+                Thanks to you, your friends, neighbors, and co-workers, we are
+                celebrating our 20th Anniversary at the Daytona Auto Mall. When
+                the Daytona Auto Mall opened in November 2001, the goal was
+                clear. One site, offering as many brands as possible. This
+                helped reduce costs to the dealerships, which in turn reduced
+                prices for our customers. It was a win-win.
+              </p>
+              <p>
+                The slogan “At the Auto Mall, when we save you save” lives on
+                today because we’re able to take advantage of volume incentives
+                from each manufacturer, due to our vast inventory.
+              </p>
+              <a class="btn btn-default" href="#" role="button"
+                >Gary Yeamans Ford</a
+              >
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <span class="glyphicon glyphicon-search"></span>
+                <h4>SHOP BY LOCATION</h4>
+                <p>
+                  With thousands of vehicles in-stock, we are sure to have just
+                  what you are looking for.
+                </p>
+                <button type="button" class="btn btn-primary">button</button>
+              </div>
+              <div class="col-sm-4">
+                <span class="glyphicon glyphicon-search"></span>
+                <h4>SHOP BY LOCATION</h4>
+                <p>
+                  With thousands of vehicles in-stock, we are sure to have just
+                  what you are looking for.
+                </p>
+                <button type="button" class="btn btn-primary">button</button>
+              </div>
+              <div class="col-sm-4">
+                <span class="glyphicon glyphicon-search"></span>
+                <h4>SHOP BY LOCATION</h4>
+                <p>
+                  With thousands of vehicles in-stock, we are sure to have just
+                  what you are looking for.
+                </p>
+                <button type="button" class="btn btn-primary">button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container banner">
+            <img
+              class="banner__image"
+              src="./images/SERVICE-banner-lg.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <h2>Why Buy Certified Pre-Owned?</h2>
+            <span
+              >Only vehicles that meet our high standards qualify for Certified
+              Pre-Owned status.</span
+            >
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">Learn More</button>
+              <button type="button" class="btn btn-primary">
+                Search Pre-Owned
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <h4>WHY SHOP AT DAYTONA AUTO MALL?</h4>
+                <h2>6,000 Vehicles. 18 Brands. 1 Location.</h2>
+                <p>
+                  Thanks to you, your friends, neighbors, and co-workers, we are
+                  celebrating our 20th Anniversary at the Daytona Auto Mall.
+                  When the Daytona Auto Mall opened in November 2001, the goal
+                  was clear. One site, offering as many brands as possible. This
+                  helped reduce costs to the dealerships, which in turn reduced
+                  prices for our customers. It was a win-win.
+                </p>
+                <p>
+                  The slogan “At the Auto Mall, when we save you save” lives on
+                  today because we’re able to take advantage of volume
+                  incentives from each manufacturer, due to our vast inventory.
+                </p>
+                <a class="btn btn-default" href="#" role="button"
+                  >Gary Yeamans Ford</a
+                >
+              </div>
+              <div class="col-md-6">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/aql7py6hvBU?si=vPJ0xrIODV4kURoG"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <h2>Frequently asked questions</h2>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/eLoOt9PHOuo?si=k2d0-ste_hQKeYpC"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse1"
+                        >
+                          Does the Daytona Auto Body Mall Service All makes and
+                          model.</a
+                        >
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        Yes. We work on all makes and models including Lexus,
+                        Toyota, INFINITI, Nissan, Lincoln, and Ford.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse2"
+                        >
+                          Can I test drive a car during COVID-19?</a
+                        >
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">Yes</div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse3"
+                        >
+                          What's your COVID-19 protection?</a
+                        >
+                      </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        We follow CDC sanitization guidelines, we disinfect 15+
+                        touchpoints on our cars before and after customer test
+                        drives. We replaced handshakes with warm salutations and
+                        verbal greetings. Daily sanitization of the entire
+                        facility across all major touchpoints at regular
+                        intervals. Social distancing at all times between all
+                        personnel and visitors. Continued education on correct
+                        handwashing and respiratory hygiene practices. Use of
+                        gloves by all automotive technicians and other
+                        affiliated service employees who encounter customer
+                        vehicles. Disinfection and sterilization of all vehicles
+                        before they come into contact with customers. All
+                        vehicles sold or serviced will come with floor, seat and
+                        steering wheel protection.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-md-4">
+                <span>250K</span>
+                <span> SATISFIED CUSTOMERS</span>
+              </div>
+              <div class="col-sm-2 col-md-4">
+                <span>250K</span>
+                <span> SATISFIED CUSTOMERS</span>
+              </div>
+              <div class="col-sm-2 col-md-4">
+                <span>250K</span>
+                <span> SATISFIED CUSTOMERS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35092.23932687503!2d-76.9734757206395!3d38.975487707757495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6393c8e8ce5%3A0xa2e98bfa381394e6!2sOur%20Lady%20of%20Sorrows!5e0!3m2!1sen!2sus!4v1704047586550!5m2!1sen!2sus"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <h4>WHY SHOP AT DAYTONA AUTO MALL?</h4>
+                <h2>6,000 Vehicles. 18 Brands. 1 Location.</h2>
+
+                <ul>
+                  <li>
+                    <h5>Step One</h5>
+                    <p>Take I-95 to exit 265 and head west on LPGA Blvd</p>
+                  </li>
+                  <li>
+                    <h5>Step One</h5>
+                    <p>Take I-95 to exit 265 and head west on LPGA Blvd</p>
+                  </li>
+                  <li>
+                    <h5>Step One</h5>
+                    <p>Take I-95 to exit 265 and head west on LPGA Blvd</p>
+                  </li>
+                  <li>
+                    <h5>Step One</h5>
+                    <p>Take I-95 to exit 265 and head west on LPGA Blvd</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <img src="./images/logo.webp" alt="" />
+              <p>
+                <span class="glyphicon glyphicon-globe"></span>1510 N Tomoka
+                Farms Rd, Daytona Beach, FL 32124
+              </p>
+              <p>
+                <span class="glyphicon glyphicon-earphone"></span>386-274-2886
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h6>Shop Inventory</h6>
+              <ul>
+                <li>Shop by Location</li>
+                <li>New Inventory</li>
+                <li>Pre-Owned Inventory</li>
+                <li>Priced Under 15K</li>
+                <li>View Specials</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h6>Shop Inventory</h6>
+              <ul>
+                <li>Shop by Location</li>
+                <li>New Inventory</li>
+                <li>Pre-Owned Inventory</li>
+                <li>Priced Under 15K</li>
+                <li>View Specials</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h6>Shop Inventory</h6>
+              <ul>
+                <li>Shop by Location</li>
+                <li>New Inventory</li>
+                <li>Pre-Owned Inventory</li>
+                <li>Priced Under 15K</li>
+                <li>View Specials</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <img src="./images/DealerOn_darkgray.webp" alt="" />
+            </div>
+            <div class="col-xs-12">
+              Copyright © 2023 by DealerOn | Sitemap | Privacy | Accessibility
+              Statement | Terms Of Use | Daytona Auto Mall | 1510 N Tomoka Farms
+              Road, Daytona Beach, FL 32124 | Sales: 386-274-2886
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
